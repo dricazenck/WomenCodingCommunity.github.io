@@ -78,16 +78,6 @@
     alt: Re:Build logo
   page_show: true
 
-- name: Devoxx - UK
-  type: event
-  link: "https://www.devoxx.co.uk"
-  description: |
-    Ready to level up your dev skills and dive into the latest tech? Women Coding Community is thrilled to collaborate with <a href="https://www.devoxx.co.uk"" target="_blank">Devoxx UK!</a> Join expert practitioners from around the world as we explore Java, Cloud, AI, Data, Security, Architecture, Dev Culture, and more.
-  image:
-    path: "/assets/images/partners/devoxx.png"
-    alt: Conference logo
-  page_show: false
-
 - name: apidays London
   type: event
   link: "https://www.apidays.global/events/london"
@@ -97,4 +87,4 @@
   image:
     path: "/assets/images/partners/apidays.png"
     alt: apidays logo
-  page_show: false
+  page_show: true

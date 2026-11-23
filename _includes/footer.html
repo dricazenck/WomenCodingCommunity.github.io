@@ -1,62 +1,70 @@
 <footer class="site-footer">
-  <div class="container">
-    <div class="row justify-content-between">
-        <div class="col-12 col-md-8">
-            <img class="brand" src="/assets/images/logo.svg" alt="Women Coding Community logo">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-8">
+                <img class="brand" src="/assets/images/logo.svg" alt="Women Coding Community logo">
+            </div>
+            <div class="col-12 col-md-4 social">
+                <h2>Follow Us</h2>
+                <p><small>Join us on social media and stay tuned.</small></p>
+                <p class="network">
+                    {% if site.network.linkedin %}
+                    <span> <a href="{{site.network.linkedin}}"
+                              target="_blank"> {% include icons/linkedin.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.twitter %}
+                    <span> <a href="{{site.network.twitter}}"
+                              target="_blank"> {% include icons/twitter.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.github %}
+                    <span> <a href="{{site.network.github}}" target="_blank"> {% include icons/github.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.medium %}
+                    <span> <a href="{{site.network.medium}}" target="_blank"> {% include icons/medium.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.meetup %}
+                    <span> <a href="{{site.network.meetup}}" target="_blank"> {% include icons/meetup.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.facebook %}
+                    <span> <a href="{{site.network.facebook}}"
+                              target="_blank"> {% include icons/facebook.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.youtube %}
+                    <span> <a href="{{site.network.youtube}}"
+                              target="_blank"> {% include icons/youtube.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.instagram %}
+                    <span> <a href="{{site.network.instagram}}"
+                              target="_blank"> {% include icons/instagram.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.mail %}
+                    <span> <a href="{{site.network.mail}}" target="_blank"> {% include icons/envelope.svg %}</a></span>
+                    {% endif %}
+                    {% if site.network.slack %}
+                    <span> <a href="{{site.network.slack}}" target="_blank"> {% include icons/slack.svg %}</a></span>
+                    {% endif %}
+                </p>
+            </div>
         </div>
-        <div class="col-12 col-md-4 social">
-            <h2>Follow Us</h2>
-            <p><small>Join us on social media and stay tuned.</small></p>
-            <p class="network">
-              {% if site.network.linkedin %}
-                <span> <a href="{{site.network.linkedin}}" target="_blank"> {% include icons/linkedin.svg %}</a></span>
-              {% endif %}
-              {% if site.network.twitter %}
-                <span> <a href="{{site.network.twitter}}" target="_blank"> {% include icons/twitter.svg %}</a></span>
-              {% endif %}
-              {% if site.network.github %}
-                <span> <a href="{{site.network.github}}" target="_blank"> {% include icons/github.svg %}</a></span>
-              {% endif %}
-              {% if site.network.medium %}
-                <span> <a href="{{site.network.medium}}" target="_blank"> {% include icons/medium.svg %}</a></span>
-              {% endif %}
-              {% if site.network.meetup %}
-                <span> <a href="{{site.network.meetup}}" target="_blank"> {% include icons/meetup.svg %}</a></span>
-              {% endif %}
-              {% if site.network.facebook %}
-                <span> <a href="{{site.network.facebook}}" target="_blank"> {% include icons/facebook.svg %}</a></span>
-              {% endif %}
-              {% if site.network.youtube %}
-                <span> <a href="{{site.network.youtube}}" target="_blank"> {% include icons/youtube.svg %}</a></span>
-              {% endif %}
-              {% if site.network.instagram %}
-                <span> <a href="{{site.network.instagram}}" target="_blank"> {% include icons/instagram.svg %}</a></span>
-              {% endif %}
-              {% if site.network.mail %}
-                <span> <a href="{{site.network.mail}}" target="_blank"> {% include icons/envelope.svg %}</a></span>
-              {% endif %}
-              {% if site.network.slack %}
-                <span> <a href="{{site.network.slack}}" target="_blank"> {% include icons/slack.svg %}</a></span>
-              {% endif %}
+        <div class="row justify-content-between">
+            <div class="col-12 copyright">
+                <p>
+                    <small>© 2026 Women Coding Community CIC — a limited company registered in England and Wales</small>
+                </p>
+                <p><small>Not-for-profit organisation. Company No. 16752036.</small></p>
+            </div>
+        </div>
+        <!-- Consent Banner-->
+        <div id="consent-banner" class="consent-banner">
+            <p class="mb-3">
+                We use cookies to enhance your experience and help us better understand and support our Women Coding
+                Community.
+                By clicking "Accept", you agree to our use of cookies for improved the community.
             </p>
+            <button id="accept-cookies" class="btn btn-primary">Accept</button>
+            <button id="deny-cookies" class="btn btn-outline">Deny</button>
         </div>
     </div>
-    <div class="row justify-content-between">
-      <div class="col-12 copyright">
-          <p><small>Women Coding Community is a not-for-profit organisation.</small></p>
-          <p><small>© 2024 Women Coding Community</small></p>
-      </div>
-  </div>
-    <!-- Consent Banner-->
-    <div id="consent-banner" class="consent-banner">
-      <p class="mb-3">
-        We use cookies to enhance your experience and help us better understand and support our Women Coding Community.
-        By clicking "Accept", you agree to our use of cookies for improved the community.
-      </p>
-      <button id="accept-cookies" class="btn btn-primary">Accept</button>
-      <button id="deny-cookies" class="btn btn-outline">Deny</button>
-    </div>
-  </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
